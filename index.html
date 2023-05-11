@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <section>
+        <h1>Tic Tac Toe</h1>
+
+        <div class="inputGroup">
+            <label for="player1">Player 1:</label>
+            <input type="text" name="player1" id="player1" value="">
+        </div>
+
+        <div class="inputGroup">
+            <label for="player2">Player 2:</label>
+            <input type="text" name="player2" id="player2" value="">
+        </div>
+
+        <div class="btn-container">
+            <button id="btn-play" onclick="startPlay()">Play</button>
+            <button id="btn-reset" onclick="resetGame()">Reset</button>
+        </div>
+
+        <p id="player-turn"></p>
+
+        <div id="panel-game" class="disabled">
+            <!-- <table>
+                <tr>
+                    <td id="0" onclick="checkBox(this)"></td>
+                    <td id="1" onclick="checkBox(this)"></td>
+                    <td id="2" onclick="checkBox(this)"></td>
+                </tr>
+                <tr>
+                    <td id="3" onclick="checkBox(this)"></td>
+                    <td id="4" onclick="checkBox(this)"></td>
+                    <td id="5" onclick="checkBox(this)"></td>
+                </tr>
+                <tr>
+                    <td id="6" onclick="checkBox(this)"></td>
+                    <td id="7" onclick="checkBox(this)"></td>
+                    <td id="8" onclick="checkBox(this)"></td>
+                </tr>
+            </table> -->
+            <div class="board" id="0" onclick="checkBox(this)"></div>
+            <div class="board" id="1" onclick="checkBox(this)"></div>
+            <div class="board" id="2" onclick="checkBox(this)"></div>
+            <div class="board" id="3" onclick="checkBox(this)"></div>
+            <div class="board" id="4" onclick="checkBox(this)"></div>
+            <div class="board" id="5" onclick="checkBox(this)"></div>
+            <div class="board" id="6" onclick="checkBox(this)"></div>
+            <div class="board" id="7" onclick="checkBox(this)"></div>
+            <div class="board" id="8" onclick="checkBox(this)"></div>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

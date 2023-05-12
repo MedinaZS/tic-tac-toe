@@ -27,7 +27,7 @@ h1 {
     margin-bottom: 15px;
 }
 
-.inputGroup{
+.input-group, #choose-game{
     margin-bottom: 10px;
 }
 
@@ -39,33 +39,54 @@ input {
     background-color: rgb(230, 225, 225);
 }
 
-.inputGroup>label {
+.input-group>label, #choose-game>label {
     color: white;
     font-size: 1.2em;
 }
-
-.btn-container {
+                  
+#btn-container, #choose-game {
     width: 360px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
-#btn-play,
-#btn-reset {
+#choose-game{
+    justify-content: space-between;
+
+}
+
+.btn{
     padding: 5px 20px;
     font-weight: bold;
     font-size: 1.1em;
-    background-color: #39beff;
     border: 2px solid black;
     box-shadow: 4px 4px black;
     cursor: pointer;
+}
+
+#btn-play {
+    background-color: #39beff;
 }
 
 #btn-reset {
     background-color: gray;
     color: white;
 }
+
+
+#btn-2-players {
+    padding: 5px 10px;
+    background-color: #39beff;
+}
+
+#btn-solo-player{
+    padding: 5px 10px;
+    background-color: #ff04c5;
+    color: white;
+}
+
 
 #panel-game {
     padding: 15px;
@@ -100,3 +121,8 @@ input {
     color: white;
     font-size: 1.4em;
 }
+
+.marked {
+    cursor: default;
+}
+
